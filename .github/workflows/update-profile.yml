@@ -1,0 +1,58 @@
+name: Refresh profile README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 20 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - README.template.md
+      - profile.config.json
+      - scripts/**
+      - tests/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile-readme
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate README from public GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_profile.py
+
+      - name: Commit meaningful changes
+        shell: bash
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No meaningful public profile changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh generated profile"
+          git push

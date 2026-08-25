@@ -1,0 +1,51 @@
+{
+  "username": "AndrianAQZ",
+  "display_name": "Andrian",
+  "headline": "I build AI tools, desktop apps, games, and useful automations.",
+  "identity_tags": [
+    "Student developer",
+    "Builder",
+    "Experimenter"
+  ],
+  "about": [
+    "I enjoy turning ambitious ideas into working software.",
+    "My current interests include AI agents, developer tooling, Apple-platform apps, game development, and practical automation.",
+    "I care about clear interfaces, safety guardrails, testing, and honest project status."
+  ],
+  "toolbox": [
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Python",
+    "Swift",
+    "C#",
+    "Unity",
+    "Go",
+    "GitHub Actions"
+  ],
+  "featured_repositories": [
+    {
+      "name": "OpenCodex",
+      "summary": "A work-in-progress, Windows-first desktop coding agent with workspace tools, Git and GitHub workflows, previews, plugins, skills, and explicit safety guardrails.",
+      "highlights": [
+        "Electron",
+        "React",
+        "TypeScript",
+        "Safety-first UX"
+      ]
+    }
+  ],
+  "exclude_repositories": [
+    "AndrianAQZ",
+    "ldsc",
+    "skills-copilot-codespaces-vscode",
+    "copilot-codespaces-vscode"
+  ],
+  "activity_exclude_repositories": [
+    "AndrianAQZ",
+    "ldsc",
+    "skills-copilot-codespaces-vscode",
+    "copilot-codespaces-vscode"
+  ],
+  "max_activity_items": 5
+}
