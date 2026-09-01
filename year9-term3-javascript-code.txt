@@ -1,0 +1,51 @@
+YEAR 9 TERM 3 JAVASCRIPT CODE
+
+===== revision.html =====
+<html>
+    <header>
+    <h1> A title </h1>
+    <h2> A subtitle </h2>
+    </header>
+    <body>
+        <a href="https://www.google.com" target="_blank">Click here to visit Google</a>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <a href="interactivitly.html">Click here to visit test.html</a>
+        <br>
+        <a href="gallery.html">Click here to visit the gallery</a>
+        <a href="js.html">Click here to visit test.html</a>
+    </body>
+<footer>
+    <ul>
+        <li>This is a list item</li>
+        <li>This is another list item</li>
+    </ul>
+</footer>
+</html>
+
+===== interactivitly.html =====
+<html>
+    <body>
+        <h1 id="tester" onmouseover="tester.style.color='blue'" style="color: black;">Andrian</h1> 
+        <p id="tester2" onclick="tester.style.fontSize='60px'" style="cursor: zoom-in;">click me make big</p>
+        <p id="tester4" onDblclick="tester4.style.color='red'" style="user-select: none; cursor: crosshair;">double me</p>
+        <p id="tester3" onmouseout="tester3.style.backgroundColor='yellow'">mouse out me</p>
+        <button type="button" onclick="tester3.style.backgroundColor='white'; tester.style.fontSize='12px'; tester.style.color='black'; tester4.style.color='black'">Reset stuff</button>
+    </body>
+</html>
+
+===== gallery.html =====
+<img id="img1" src="Autumnal Peach.png" height="200">
+<br><br>
+<button onclick="document.getElementById('img1').src='Autumnal Peach.png'">First Image</button>
+<br><br>
+<button onclick="document.getElementById('img1').src='image.png'">Second Image</button>
+
+===== test.html =====
+<html>
+    <body>
+        <p>hi</p>
+    </body>
+</html>
+
+===== js.html =====
+[This file is empty in the original project.]
