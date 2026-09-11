@@ -51,11 +51,11 @@ A work-in-progress, Windows-first desktop coding agent with workspace tools, Git
 ## Recent public activity
 
 <!-- AUTO:ACTIVITY:START -->
+- **11 Sep 2026** — Published a release in [AndrianAQZ/tide-game-downloads](https://github.com/AndrianAQZ/tide-game-downloads/releases/tag/v0.3.0-native-preview).
 - **10 Sep 2026** — Published a release in [AndrianAQZ/tide-game-downloads](https://github.com/AndrianAQZ/tide-game-downloads/releases/tag/v0.2.0-native).
 - **10 Sep 2026** — Created branch `main` in [AndrianAQZ/tide-game-downloads](https://github.com/AndrianAQZ/tide-game-downloads).
 - **10 Sep 2026** — Opened issue #307 in [Game-Club-SSC/TIDE](https://github.com/Game-Club-SSC/TIDE/issues/307).
 - **10 Sep 2026** — Opened issue #306 in [Game-Club-SSC/TIDE](https://github.com/Game-Club-SSC/TIDE/issues/306).
-- **10 Sep 2026** — Opened issue #305 in [Game-Club-SSC/TIDE](https://github.com/Game-Club-SSC/TIDE/issues/305).
 <!-- AUTO:ACTIVITY:END -->
 
 <details>
@@ -72,5 +72,5 @@ The generated README is committed when its public content changes. A low-noise m
 ---
 
 <sub><!-- AUTO:STATUS:START -->
-Latest included public activity: 10 Sep 2026 UTC. Automation checked: Sep 2026 UTC. A low-noise monthly heartbeat keeps scheduled refreshes active.
+Latest included public activity: 11 Sep 2026 UTC. Automation checked: Sep 2026 UTC. A low-noise monthly heartbeat keeps scheduled refreshes active.
 <!-- AUTO:STATUS:END --></sub>
