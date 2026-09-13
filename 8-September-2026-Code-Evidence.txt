@@ -1,0 +1,121 @@
+YEAR 9 DIGITAL SOLUTIONS - CODE EVIDENCE
+Snapshot date: 8 September 2026
+GitHub snapshot commit: 8496468a5f50d6102b5934471786a4933e9fbb3b
+
+Included files only:
+- index.html
+- learn.html
+- safety.html
+- script.js
+- styles.css
+
+============================================================
+index.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+            <div class="navbar">
+                <h1><a href="index.html" class="head">Photography</a>
+                <input type="search" id="search-input" placeholder="Search photos...">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" onclick="" data-filter="astro">Astro</button>
+                <button class="filter" data-filter="nature">Nature</button>
+                <button class="filter" data-filter="portraits">Portraits</button></h1>    
+            </div>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <input type="radio" id="button1" name="pages" onclick="window.location.href='index.html'" value="Discover" checked>
+            <label for="button1">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn">
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources">
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+    </body>
+</html>
+
+============================================================
+learn.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+            <li><a href="index.html" class="head">Photography</a></li>
+            <li><a href="learn.html" class="active">Learn</a></li>
+            <li></li> 
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="radio" id="button1" name="pages" onclick="window.location.href='index.html'" value="Discover">
+            <label for="button1">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn" checked>
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources">
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+    </body>
+</html>
+
+============================================================
+safety.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+            <li><a href="index.html" class="head">Photography</a></li>
+            <li><a href="safety.html" class="active">Safety</a></li>
+            <li></li> 
+            </ul>
+            <br>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="radio" id="button1" name="pages" value="Discover" checked>
+            <label for="button1" onclick="window.location.href='index.html'">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn">
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources" checked>
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+    </body>
+</html>
+
+============================================================
+script.js
+============================================================
+[This file was empty in the 8 September 2026 snapshot.]
+
+============================================================
+styles.css
+============================================================
+ul {
+  list-style-type: none;
+  padding: 0;   
+
+  margin: 0;
+}
+ul h1 a {
+  color: black;
+  text-decoration: none;
+}
