@@ -1,0 +1,353 @@
+YEAR 9 DIGITAL SOLUTIONS - CODE EVIDENCE
+Snapshot date: 13 September 2026
+GitHub snapshot commit: f5bb63ea7d59e058d9ecb27098e5bf6e0a05762f
+
+Included files only:
+- index.html
+- learn.html
+- safety.html
+- script.js
+- styles.css
+
+============================================================
+index.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <h1><a href="index.html" class="head">Photography</a></h1>
+                </div>
+                <div class="navbar">
+                    <div class="search">
+                        <input type="search" id="search-input" placeholder="Search photos...">
+                        <button class="search-button" onclick="searchPhotos()">🔍</button>
+                    </div>
+                    <div class="filters">
+                        <h2><button class="filter active" data-filter="all" onclick="filterPosts('all', this)">All</button>
+                        <button class="filter" onclick="filterPosts('astro', this)">Astro</button>
+                        <button class="filter" onclick="filterPosts('macro', this)">Macro</button>
+                        <button class="filter" onclick="filterPosts('landscape', this)">Landscape</button></h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <input type="radio" id="button1" name="pages" onclick="window.location.href='index.html'" value="Discover" checked>
+            <label for="button1">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn">
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources">
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+            <div class="post macro">
+                <h3>Wildlife Location</h3>
+                <p>Lizard, macro photography. <br> Underwood Park.</p>
+                <img src="images/Lizard-eyes.jpg" alt="lizard" width="300">
+                <button onclick="toggleLike(this)">♡</button>
+            </div>
+
+            <div class="post astro">
+                <h3>Night Sky Location</h3>
+                <p>Milky Way, astrophotography. <br> Tamborine Mountain.</p>
+                <img src="images/milky-way-1.jpg" alt="milky way" width="300">
+                <button onclick="toggleLike(this)">♡</button>
+            </div>
+
+            <div class="post landscape">
+                <h3>Sunset Location</h3>
+                <p>Sunset, landscape photography. <br> Rockhampton.</p>
+                <img src="images/sunset.jpg" alt="sunset" width="300">
+                <button onclick="toggleLike(this)">♡</button>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+============================================================
+learn.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <h1><a href="index.html">Photography</a></h1>
+                </div>
+                <div class="navbar">
+                    <h1><a href="learn.html">Learn</a></h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <input type="radio" id="button1" name="pages" onclick="window.location.href='index.html'" value="Discover">
+            <label for="button1">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn" checked>
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources">
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+        <div class="learn-text">
+            <div class="landscape-learn">
+                <img src="images/sunset.jpg" alt="sunset" width="350">
+                <div>
+                    <h2>Landscape Photography</h2>
+                    <p>
+                        Landscape photography focuses on scenery and the environment.
+                        Look for an interesting foreground, background and good lighting.
+                    </p>
+                    <button onclick="showChallenge('landscape')">Try this photo!</button>
+                    <button onclick="showTip('composition-landscape')">Show Composition Tip</button>
+                    <button onclick="showTip('lighting-landscape')">Show Lighting Tip</button>
+                    <button onclick="showTip('perspective-landscape')">Show Perspective Tip</button>
+                </div>
+            </div>
+
+            <div class="astro-learn">
+                <img src="images/milky-way-1.jpg" alt="milky way" width="350">
+                <div>
+                    <h2>Astrophotography</h2>
+                    <p>
+                        Astrophotography is the photography of astronomical objects, celestial events, and areas of the night sky. 
+                        It requires a camera with manual settings, a tripod, and often a remote shutter release. 
+                        Use a wide-angle lens and a high ISO setting to capture the stars and the Milky Way. 
+                        Experiment with long exposures to capture the movement of the stars and create stunning night sky images.
+                    </p>
+                    <button onclick="showChallenge('astrophotography')">Try this photo!</button>
+                    <button onclick="showTip('composition-astrophotography')">Show Composition Tip</button>
+                    <button onclick="showTip('lighting-astrophotography')">Show Lighting Tip</button>
+                    <button onclick="showTip('perspective-astrophotography')">Show Perspective Tip</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+============================================================
+safety.html
+============================================================
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <h1><a href="index.html">Photography</a></h1>
+                </div>
+                <div class="navbar">
+                    <h1><a href="safety.html">Safety & Sources</a></h1>
+                </div>
+            </div>
+            <br>  
+            <br>
+            <input type="radio" id="button1" name="pages" value="Discover" onclick="window.location.href='index.html'">
+            <label for="button1" onclick="window.location.href='index.html'">Discover</label><br>
+            <input type="radio" id="learn" name="pages" onclick="window.location.href='learn.html'" value="Learn">
+            <label for="learn">Learn</label><br>
+            <input type="radio" id="button3" name="pages" onclick="window.location.href='safety.html'" value="Sources" checked>
+            <label for="button3">Safety & Sources</label><br>
+        </header>
+        <br>
+        <br>
+        <h2>Safety</h2>
+        <p>Photography is a fun and creative hobby, but it's important to stay safe while taking photos. Here are some safety tips to keep in mind:</p>
+        <ul>
+            <li>Be aware of your surroundings and avoid dangerous areas.</li>
+            <li>Don't trespass on private property to take photos.</li>
+            <li>Be careful when taking photos in extreme weather conditions.</li>
+            <li>Use caution when taking photos near water or cliffs.</li>
+            <li>Always let someone know where you are going and when you plan to return.</li>
+            <li>Be respectful of wildlife and their habitats.</li>
+            <li>Use appropriate safety gear, such as helmets or harnesses, when necessary.</li>
+        </ul>
+        <br>
+        <br>
+        <h2>Sources</h2>
+        <h3> Documentation Sources </h3>
+        <ul>
+        <li><a href="https://www.esafety.gov.au/research/the-online-experiences-of-children-in-australia/report-digital-use-and-risk-among-children-aged-10-to-15">Digital Use and Risk: Online platform engagement among children aged 10 to 15</a></li>
+        <li><a href="https://www.atlantis-press.com/proceedings/icsbpim-25/126017588">An Examination of the Impact of Photography on Developing Media Literacy and Awareness among School-Going Teenagers</a></li>
+        </ul>
+        <h4> Coding sources </h4>
+        <ul>
+        <li><a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">Used for filtering posts by photography category.</a></li>
+        <li><a href="https://www.w3schools.com/howto/howto_js_filter_lists.asp">Used for creating the photo search function.</a></li>
+        <li><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp">Used for selecting all filter buttons and posts.</a></li>
+        <li><a href="https://www.w3schools.com/jsref/prop_element_classlist.asp">Used for adding, removing and checking CSS classes.</a></li>
+        <li><a href="https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp">Used for getting all photo posts by their class name.</a></li>
+        <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">Used for making buttons run JavaScript when clicked.</a></li>
+        <li><a href="https://www.w3schools.com/jsref/met_win_alert.asp">Used for showing photography tips and challenges.</a></li>
+        <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">Used for arranging the layout of images, text and navigation using Flexbox.</a></li>
+        </ul>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+============================================================
+script.js
+============================================================
+function filterPosts(category, clickedButton) {
+    const buttons = document.querySelectorAll(".filter");
+    const posts = document.querySelectorAll(".post");
+
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+
+    clickedButton.classList.add("active");
+
+    posts.forEach(function(post) {
+        if (category === "all" || post.classList.contains(category)) {
+            post.style.display = "flex";
+        } else {
+            post.style.display = "none";
+        }
+    });
+}
+
+function showTip(tip) {
+    if (tip === "composition-landscape") {
+        alert("Tip: Use the rule of thirds to create a more interesting composition.");
+    }
+    if (tip === "lighting-landscape") {
+        alert("Tip: Use natural light to create a more dramatic effect.");
+    }
+    if (tip === "perspective-landscape") {
+        alert("Tip: Use a low angle to make your subject appear more powerful.");
+    }
+    if (tip === "composition-astrophotography") {
+        alert("Tip: Try to position the Milky Way in the frame to create a more interesting composition.");
+    }
+    if (tip === "lighting-astrophotography") {
+        alert("Tip: Use a wide aperture to capture more light. Open your lens to f/2.8 or lower if possible.");
+    }
+    if (tip === "perspective-astrophotography") {
+        alert("Tip: Use a telephoto lens to compress the perspective and achieve more detail in the stars. A 200mm lens or higher is recommended.");
+    }
+}
+
+function showChallenge(type) {
+    if (type === "landscape") {
+        alert("Challenge: Take a photo of a landscape and share it with us!");
+    }
+    if (type === "astrophotography") {
+        alert("Challenge: Take a photo of the night sky and share it with us!");
+    }
+}
+
+function searchPhotos() {
+    var input, filter, posts, i, txtValue;
+    input = document.getElementById('search-input');
+    filter = input.value.toUpperCase();
+    posts = document.getElementsByClassName('post');
+
+    for (i = 0; i < posts.length; i++) {
+        txtValue = posts[i].textContent || posts[i].innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            posts[i].style.display = "flex";
+        } else {
+            posts[i].style.display = "none";
+        }
+    }
+}
+
+function toggleLike(button) {
+    if (button.style.color == "red") {
+        button.style.color = "black";
+        button.innerHTML = "♡";
+    }
+    else {
+        button.style.color = "red";
+        button.innerHTML = "♥︎";
+    }
+}
+
+============================================================
+styles.css
+============================================================
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+.top {
+  list-style-type: none;
+  padding: 0;   
+  display: flex;
+  margin: 0;
+}
+.top .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  margin-left: -150px;
+}
+.top .navbar .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top .navbar .filters {
+  display: flex;
+  gap: 10px;
+}
+.top .navbar .search .search-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.top h1 a {
+  color: rgba(0, 162, 255, 0.868);
+  text-decoration: none;
+  margin: 0;
+}
+.top .navbar .filters h2 {
+  margin: 0;
+}
+.top .navbar .filters h2 .filter {
+  color: rgba(177, 107, 2, 0.868);
+  text-decoration: none;
+}
+.top .navbar .filters h2 .filter:hover {
+  color: rgba(0, 162, 255, 0.868);
+  text-decoration: none;
+}
+.top .navbar .filters h2 .filter.active {
+  color: rgba(0, 162, 255, 0.868);
+  text-decoration: none;
+}
+div.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+div.post button {
+  margin-top: 10px;
+}
+
+.learn-text {
+  font-size: 20px;
+}
+.landscape-learn, .astro-learn {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto;
+}
