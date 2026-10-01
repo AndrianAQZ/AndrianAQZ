@@ -72,5 +72,5 @@ The generated README is committed when its public content changes. A low-noise m
 ---
 
 <sub><!-- AUTO:STATUS:START -->
-Latest included public activity: 27 Sep 2026 UTC. Automation checked: Sep 2026 UTC. A low-noise monthly heartbeat keeps scheduled refreshes active.
+Latest included public activity: 27 Sep 2026 UTC. Automation checked: Oct 2026 UTC. A low-noise monthly heartbeat keeps scheduled refreshes active.
 <!-- AUTO:STATUS:END --></sub>
